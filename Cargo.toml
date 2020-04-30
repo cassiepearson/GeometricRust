@@ -1,0 +1,13 @@
+[package]
+name = "geometry"
+version = "0.1.0"
+authors = ["Christopher Negrich <cnegrich@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+cgmath = "0.17.0"
+itertools = "0.8.0"
+num = "0.2.0"
+num-traits = "0.2.8"
+rand = "0.7"
+inline-python = "0.4.1"
