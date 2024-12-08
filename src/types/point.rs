@@ -1,3 +1,19 @@
-use cgmath::Point2;
+use crypticRust::general::numbers::Number;
 
-pub type Point<T> = Point2<T>;
+#[derive(Debug, PartialEq, Copy, Clone)]
+pub struct Point<T>
+where
+    T: Number,
+{
+    x: T,
+    y: T,
+}
+
+impl<T> Point<T>
+where
+    T: Number,
+{
+    pub fn new(x: T, y: T) -> Self {
+        Self { x, y }
+    }
+}

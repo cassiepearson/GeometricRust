@@ -2,3 +2,4 @@
 TODO
 *.pyc
 /target
+/.idea

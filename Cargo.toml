@@ -1,13 +1,13 @@
 [package]
-name = "geometry"
+name = "geometric-rust"
 version = "0.1.0"
-authors = ["Christopher Negrich <cnegrich@gmail.com>"]
-edition = "2018"
+authors = ["Cassandra Pearson <cnegrich@gmail.com>"]
+edition = "2021"
 
 [dependencies]
-cgmath = "0.17.0"
-itertools = "0.8.0"
-num = "0.2.0"
-num-traits = "0.2.8"
-rand = "0.7"
-inline-python = "0.4.1"
+rand = "0.8.5"
+anyhow = "1.0.94"
+float-cmp = "0.10.0"
+thiserror = "2.0.5"
+rstest = "0.23.0"
+crypticRust = { git = "https://github.com/cassiepearson/CrypticRust.git" }
