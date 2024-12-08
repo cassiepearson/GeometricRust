@@ -17,7 +17,7 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: example-build
+          name: geometric-rust
           path: ./target/release/geometric-rust
           retention-days: 10
           if-no-files-found: warn
