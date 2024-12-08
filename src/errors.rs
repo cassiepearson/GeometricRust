@@ -1,13 +1,7 @@
-#[derive(Debug)]
-pub enum MathError {
-    ConversionFailure(String),
-    CalculationFailure(String),
-}
+use thiserror::Error;
 
-#[derive(Debug)]
-pub enum GeometryError {
-    ConversionFailure(String),
-    CalculationFailure(String),
-    InstantiationFailure(String),
-    MutationFailure(String),
+#[derive(Debug, Error)]
+pub enum GeomError {
+    #[error("Unsupported type found. Failed to {0}")]
+    UnsupportedType(String),
 }
