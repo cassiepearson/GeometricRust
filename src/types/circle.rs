@@ -7,7 +7,7 @@ use crypticRust::general::numbers::RealNumber;
 /// Circle Structure
 ///
 /// All points in a circle are equal distance from the center.
-#[derive(Clone, Debug, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq)]
 pub struct Circle<T>
 where
     T: RealNumber,
@@ -40,7 +40,7 @@ impl<T: RealNumber> Circle<T> {
 }
 
 #[cfg(test)]
-mod tests {
+mod circle_tests {
     use super::*;
     use float_cmp::approx_eq;
     use rstest::rstest;
