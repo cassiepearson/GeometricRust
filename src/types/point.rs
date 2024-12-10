@@ -25,14 +25,20 @@ mod point_tests {
     #[test]
     fn test_new_usize() {
         let out = Point::new(0_usize, 0_usize);
-        let expected = Point { x: 0_usize, y: 0_usize };
+        let expected = Point {
+            x: 0_usize,
+            y: 0_usize,
+        };
         assert_eq!(out, expected);
     }
 
     #[test]
     fn test_new_isize() {
         let out = Point::new(0_isize, 0_isize);
-        let expected = Point { x: 0_isize, y: 0_isize };
+        let expected = Point {
+            x: 0_isize,
+            y: 0_isize,
+        };
         assert_eq!(out, expected);
     }
 
